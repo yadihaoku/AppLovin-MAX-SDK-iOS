@@ -1,0 +1,4 @@
+framework module AppLovinMediationMolocoAdapter {
+  header "AppLovinMediationMolocoAdapter-Swift.h"
+  requires objc
+}

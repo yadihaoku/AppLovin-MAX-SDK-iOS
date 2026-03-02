@@ -1,0 +1,6 @@
+framework module AppLovinMediationMintegralAdapter {
+  umbrella header "AppLovinMediationMintegralAdapter.h"
+  export *
+
+  module * { export * }
+}

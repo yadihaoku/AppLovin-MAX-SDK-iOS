@@ -4,15 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "AppLovinSDK",
+    name: "AppLovinSDKAdapter",
     platforms: [
         .iOS(.v12)
     ],
     products: [
-        .library(
-            name: "AppLovinSDK",
-            targets: ["AppLovinSDKResources"]
-        ),
+        
         // MARK: - Mediation Adapters
         // Uncomment the adapters you need. Note that you will need to provide the checksum for the binary target.
         
@@ -48,37 +45,6 @@ let package = Package(
         // .package(name: "GoogleMobileAds", url: "...", from: "...")
     ],
     targets: [
-        // This is a wrapper target to configure various settings required by main binary target.
-        .target(
-            name: "AppLovinSDKResources",
-            dependencies: [
-                .target(name: "AppLovinSDK")
-            ],
-            linkerSettings: [
-                .linkedFramework("AdSupport"),
-                .linkedFramework("AppTrackingTransparency"),
-                .linkedFramework("AudioToolbox"),
-                .linkedFramework("AVFoundation"),
-                .linkedFramework("CoreGraphics"),
-                .linkedFramework("CoreMedia"),
-                .linkedFramework("CoreMotion"),
-                .linkedFramework("CoreTelephony"),
-                .linkedFramework("Foundation"),
-                .linkedFramework("MessageUI"),
-                .linkedFramework("SafariServices"),
-                .linkedFramework("StoreKit"),
-                .linkedFramework("SystemConfiguration"),
-                .linkedFramework("UIKit"),
-                .linkedFramework("WebKit"),
-                
-                .linkedLibrary("z"),
-            ]
-        ),
-        .binaryTarget(
-            name: "AppLovinSDK",
-            url: "https://artifacts.applovin.com/ios/com/applovin/applovin-sdk/AppLovinSDK-13.6.0.xcframework.zip",
-            checksum: "a7f6701b24f67c55a0beabfcc06b31660590dceb410e3e6bae67b4fd4d817349"
-        ),
         
         // MARK: - Mediation Adapters Binary Targets
         // Uncomment the adapters you need. Note that you will need to provide the checksum for the binary target.

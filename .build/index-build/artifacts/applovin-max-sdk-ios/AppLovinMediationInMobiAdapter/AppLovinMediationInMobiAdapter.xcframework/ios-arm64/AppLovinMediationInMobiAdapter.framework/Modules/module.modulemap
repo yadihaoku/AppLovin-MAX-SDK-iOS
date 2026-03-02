@@ -1,0 +1,6 @@
+framework module AppLovinMediationInMobiAdapter {
+  umbrella header "AppLovinMediationInMobiAdapter.h"
+  export *
+
+  module * { export * }
+}

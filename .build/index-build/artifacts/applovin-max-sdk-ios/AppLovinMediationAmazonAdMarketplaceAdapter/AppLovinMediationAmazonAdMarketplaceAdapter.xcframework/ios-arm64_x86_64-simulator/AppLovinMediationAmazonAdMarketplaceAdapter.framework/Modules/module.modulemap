@@ -1,0 +1,6 @@
+framework module AppLovinMediationAmazonAdMarketplaceAdapter {
+  umbrella header "AppLovinMediationAmazonAdMarketplaceAdapter.h"
+  export *
+
+  module * { export * }
+}

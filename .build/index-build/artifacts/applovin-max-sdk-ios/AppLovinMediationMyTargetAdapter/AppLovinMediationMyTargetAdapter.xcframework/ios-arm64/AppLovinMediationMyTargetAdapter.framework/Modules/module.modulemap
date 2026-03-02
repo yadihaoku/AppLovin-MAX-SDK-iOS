@@ -1,0 +1,4 @@
+framework module AppLovinMediationMyTargetAdapter {
+  header "AppLovinMediationMyTargetAdapter-Swift.h"
+  requires objc
+}

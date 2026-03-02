@@ -1,0 +1,6 @@
+framework module AppLovinMediationFyberAdapter {
+  umbrella header "AppLovinMediationFyberAdapter.h"
+  export *
+
+  module * { export * }
+}

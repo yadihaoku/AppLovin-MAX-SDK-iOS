@@ -1,0 +1,6 @@
+framework module AppLovinMediationByteDanceAdapter {
+  umbrella header "AppLovinMediationByteDanceAdapter.h"
+  export *
+
+  module * { export * }
+}

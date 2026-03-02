@@ -1,0 +1,6 @@
+framework module AppLovinMediationYandexAdapter {
+  umbrella header "AppLovinMediationYandexAdapter.h"
+  export *
+
+  module * { export * }
+}

@@ -1,6 +1,0 @@
-framework module AppLovinMediationFacebookAdapter {
-  umbrella header "AppLovinMediationFacebookAdapter.h"
-  export *
-
-  module * { export * }
-}

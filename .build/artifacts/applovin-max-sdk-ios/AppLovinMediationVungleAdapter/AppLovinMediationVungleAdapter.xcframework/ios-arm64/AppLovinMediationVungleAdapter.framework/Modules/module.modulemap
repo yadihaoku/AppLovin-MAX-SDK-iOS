@@ -1,6 +1,0 @@
-framework module AppLovinMediationVungleAdapter {
-  umbrella header "AppLovinMediationVungleAdapter.h"
-  export *
-
-  module * { export * }
-}

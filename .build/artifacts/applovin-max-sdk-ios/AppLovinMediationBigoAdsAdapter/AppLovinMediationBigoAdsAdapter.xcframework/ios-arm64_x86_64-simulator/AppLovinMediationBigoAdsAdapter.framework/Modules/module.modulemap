@@ -1,6 +1,0 @@
-framework module AppLovinMediationBigoAdsAdapter {
-  umbrella header "AppLovinMediationBigoAdsAdapter.h"
-  export *
-
-  module * { export * }
-}

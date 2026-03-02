@@ -1,6 +1,0 @@
-framework module AppLovinMediationBidMachineAdapter {
-  umbrella header "AppLovinMediationBidMachineAdapter.h"
-  export *
-
-  module * { export * }
-}

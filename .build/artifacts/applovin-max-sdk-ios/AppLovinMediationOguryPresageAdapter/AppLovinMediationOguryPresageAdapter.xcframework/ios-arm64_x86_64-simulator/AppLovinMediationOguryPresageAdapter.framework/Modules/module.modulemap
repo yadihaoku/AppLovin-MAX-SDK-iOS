@@ -1,6 +1,0 @@
-framework module AppLovinMediationOguryPresageAdapter {
-  umbrella header "AppLovinMediationOguryPresageAdapter.h"
-  export *
-
-  module * { export * }
-}

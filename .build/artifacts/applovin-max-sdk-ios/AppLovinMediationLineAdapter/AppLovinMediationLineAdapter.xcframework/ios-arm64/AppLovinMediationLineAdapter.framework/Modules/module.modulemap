@@ -1,6 +1,0 @@
-framework module AppLovinMediationLineAdapter {
-  umbrella header "AppLovinMediationLineAdapter.h"
-  export *
-
-  module * { export * }
-}

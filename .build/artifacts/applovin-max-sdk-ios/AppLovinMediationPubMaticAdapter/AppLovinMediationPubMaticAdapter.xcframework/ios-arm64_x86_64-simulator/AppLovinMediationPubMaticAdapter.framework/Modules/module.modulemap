@@ -1,6 +1,0 @@
-framework module AppLovinMediationPubMaticAdapter {
-  umbrella header "AppLovinMediationPubMaticAdapter.h"
-  export *
-
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module AppLovinMediationVerveAdapter {
-  umbrella header "AppLovinMediationVerveAdapter.h"
-  export *
-
-  module * { export * }
-}

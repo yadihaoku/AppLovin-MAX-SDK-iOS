@@ -1,6 +1,0 @@
-framework module AppLovinMediationChartboostAdapter {
-  umbrella header "AppLovinMediationChartboostAdapter.h"
-  export *
-
-  module * { export * }
-}

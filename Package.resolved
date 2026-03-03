@@ -2,33 +2,6 @@
   "object": {
     "pins": [
       {
-        "package": "AppMetrica",
-        "repositoryURL": "https://github.com/appmetrica/appmetrica-sdk-ios",
-        "state": {
-          "branch": null,
-          "revision": "d6d472de0485c87c3bfe0dd3b57a782132d751ee",
-          "version": "5.16.0"
-        }
-      },
-      {
-        "package": "DivKit",
-        "repositoryURL": "https://github.com/divkit/divkit-ios.git",
-        "state": {
-          "branch": null,
-          "revision": "f5c4fbd7af34fbcf79197abcc14010e45b45036d",
-          "version": "31.14.0"
-        }
-      },
-      {
-        "package": "DivKitBinaryCompatibilityFacade",
-        "repositoryURL": "https://github.com/divkit/divkit-ios-facade",
-        "state": {
-          "branch": null,
-          "revision": "947cc79c0f0fb8a3393ac33b5e420c635a6e1d94",
-          "version": "4.6.1"
-        }
-      },
-      {
         "package": "FBAudienceNetwork",
         "repositoryURL": "https://github.com/facebook/FBAudienceNetwork.git",
         "state": {
@@ -38,57 +11,12 @@
         }
       },
       {
-        "package": "KSCrash",
-        "repositoryURL": "https://github.com/kstenerud/KSCrash",
-        "state": {
-          "branch": null,
-          "revision": "c0177658fc771ae833b6d3b8f5f3f5a14d59ec03",
-          "version": "2.1.2"
-        }
-      },
-      {
         "package": "MintegralAdSDK",
         "repositoryURL": "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package.git",
         "state": {
           "branch": null,
           "revision": "b483374ae72193a547f97055132ac9d0a3a5cb7f",
           "version": "7.7.9"
-        }
-      },
-      {
-        "package": "MyTargetSDK",
-        "repositoryURL": "https://github.com/myTargetSDK/mytarget-ios-spm.git",
-        "state": {
-          "branch": null,
-          "revision": "8a3cb8f05d8eb8fc51190ceeb46275653a78f51f",
-          "version": "5.40.0"
-        }
-      },
-      {
-        "package": "MyTrackerSDK",
-        "repositoryURL": "https://github.com/myTrackerSDK/mytracker-ios-spm.git",
-        "state": {
-          "branch": null,
-          "revision": "bbd0468cfa1a3b93aeab8f8304ece39141e1aeba",
-          "version": "3.4.2"
-        }
-      },
-      {
-        "package": "cmark-gfm",
-        "repositoryURL": "https://github.com/swiftlang/swift-cmark.git",
-        "state": {
-          "branch": null,
-          "revision": "5d9bdaa4228b381639fff09403e39a04926e2dbe",
-          "version": "0.7.1"
-        }
-      },
-      {
-        "package": "swift-markdown",
-        "repositoryURL": "https://github.com/apple/swift-markdown.git",
-        "state": {
-          "branch": null,
-          "revision": "7d9a5ce307528578dfa777d505496bd5f544ad94",
-          "version": "0.7.3"
         }
       },
       {
@@ -110,30 +38,12 @@
         }
       },
       {
-        "package": "vgsl",
-        "repositoryURL": "https://github.com/yandex/vgsl.git",
-        "state": {
-          "branch": null,
-          "revision": "84c4872fc68607d301dec6a9a8ff3ca174d93d84",
-          "version": "7.19.1"
-        }
-      },
-      {
         "package": "VungleAdsSDK",
         "repositoryURL": "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager.git",
         "state": {
           "branch": null,
           "revision": "f38ec7eaf8f84e50c194595620fb3c4e325d2f31",
           "version": "7.7.1"
-        }
-      },
-      {
-        "package": "YandexMobileAdsPackage",
-        "repositoryURL": "https://github.com/yandexmobile/yandex-ads-sdk-ios.git",
-        "state": {
-          "branch": null,
-          "revision": "92730fc8d0999cdbc21652bb99afb1798baa2e8f",
-          "version": "7.11.2"
         }
       }
     ]

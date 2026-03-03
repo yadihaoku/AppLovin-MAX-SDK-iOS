@@ -42,7 +42,13 @@ let package = Package(
         .library(name: "AppLovinMediationYSONetworkAdapter", targets: ["AppLovinMediationYSONetworkAdapter"]),
         .library(name: "AppLovinMediationYandexAdapter", targets: ["AppLovinMediationYandexAdapter"]),
     ],
-    dependencies: [],
+    dependencies: [
+        // Google Mobile Ads SDK — required by AppLovinMediationGoogleAdapter and AppLovinMediationGoogleAdManagerAdapter
+        .package(
+            url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
+            from: "13.0.0"
+        ),
+    ],
     targets: [
 
         // MARK: - AppLovin MAX SDK
@@ -121,13 +127,31 @@ let package = Package(
             url: "https://artifacts.applovin.com/ios/com/applovin/mediation/fyber-adapter/AppLovinMediationFyberAdapter-8.4.5.0.zip",
             checksum: "72f06575608287944a2aac74ac99d47b141747ee4e73880cdcc0190881e7b3af"
         ),
-        .binaryTarget(
+        // Google AdManager — wrapper source target declares GoogleMobileAds dependency
+        .target(
             name: "AppLovinMediationGoogleAdManagerAdapter",
+            dependencies: [
+                .target(name: "AppLovinMediationGoogleAdManagerAdapterBinary"),
+                .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
+            ],
+            path: "Sources/AppLovinMediationGoogleAdManagerAdapter"
+        ),
+        .binaryTarget(
+            name: "AppLovinMediationGoogleAdManagerAdapterBinary",
             url: "https://artifacts.applovin.com/ios/com/applovin/mediation/googleadmanager-adapter/AppLovinMediationGoogleAdManagerAdapter-13.1.0.1.zip",
             checksum: "7dcbf6c32641447b03cc5db2f1a09572f9d62fe51000e2bcd42348c4a5faede3"
         ),
-        .binaryTarget(
+        // Google — wrapper source target declares GoogleMobileAds dependency
+        .target(
             name: "AppLovinMediationGoogleAdapter",
+            dependencies: [
+                .target(name: "AppLovinMediationGoogleAdapterBinary"),
+                .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
+            ],
+            path: "Sources/AppLovinMediationGoogleAdapter"
+        ),
+        .binaryTarget(
+            name: "AppLovinMediationGoogleAdapterBinary",
             url: "https://artifacts.applovin.com/ios/com/applovin/mediation/google-adapter/AppLovinMediationGoogleAdapter-13.1.0.1.zip",
             checksum: "d30671bd7395b7b521d39751154f8cf3f883e7e6df523121a03169f415bb43a7"
         ),

@@ -68,8 +68,8 @@ let package = Package(
             url: "https://github.com/yandexmobile/yandex-ads-sdk-ios.git",
             from: "7.0.0"
         ),
+        .package(url: "https://github.com/facebook/FBAudienceNetwork.git", from: "6.21.1")
         // ⚠️ 以下 SDK 无官方 SPM 支持，需通过 CocoaPods 或手动集成：
-        // FBAudienceNetwork (Facebook/Meta) — CocoaPods: pod 'FBAudienceNetwork'
         // ChartboostSDK               — CocoaPods: pod 'ChartboostSDK'
         // Ads-Global (ByteDance/Pangle)— CocoaPods: pod 'Ads-Global'
         // InMobiSDK                   — CocoaPods: pod 'InMobiSDK'
@@ -172,9 +172,17 @@ let package = Package(
             checksum: "33ffd18f267a21c10e61d0183da772337f3a9d8fcef6580df5602b6caf412d64"
         ),
 
-        // ⚠️ Facebook/Meta Audience Network — no official SPM package
-        .binaryTarget(
+        // ✅ Facebook/Meta Audience Network — FBAudienceNetwork declared in dependencies
+        .target(
             name: "AppLovinMediationFacebookAdapter",
+            dependencies: [
+                .target(name: "AppLovinMediationFacebookAdapterBinary"),
+                .product(name: "FBAudienceNetwork", package: "FBAudienceNetwork"),
+            ],
+            path: "Sources/AppLovinMediationFacebookAdapter"
+        ),
+        .binaryTarget(
+            name: "AppLovinMediationFacebookAdapterBinary",
             url: "https://artifacts.applovin.com/ios/com/applovin/mediation/facebook-adapter/AppLovinMediationFacebookAdapter-6.21.1.0.zip",
             checksum: "69069f3c153a9387a355a2e4e9ed322bcc4fcec7b0f5bc80fa9880e9c69c1ccb"
         ),

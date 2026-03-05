@@ -14,6 +14,8 @@ let package = Package(
         .library(name: "AppLovinMediationVungleAdapter",           targets: ["AppLovinMediationVungleAdapter"]),
         .library(name: "AppLovinMediationMintegralAdapter",        targets: ["AppLovinMediationMintegralAdapter"]),
         .library(name: "AppLovinMediationInMobiAdapter",           targets: ["AppLovinMediationInMobiAdapter"]),
+        .library(name: "GoogleAppLovinAdapter",                    targets: ["GoogleAppLovinAdapter"]),
+        .library(name: "GoogleMintegralAdapter",                   targets: ["MintegralAdapter"]),
     ],
     dependencies: [
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", from: "13.0.0"),
@@ -55,7 +57,7 @@ let package = Package(
 
         // MARK: - admobe sdk
         .target(
-            name: "AppLovinAdapterTarget",
+            name: "GoogleAppLovinAdapter",
             dependencies: [
                 .target(name: "AppLovinAdapter"),
                 .target(name: "AppLovinSDK"),

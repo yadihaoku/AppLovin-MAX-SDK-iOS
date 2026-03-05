@@ -7,6 +7,7 @@ let package = Package(
         .iOS(.v13)
     ],
     products: [
+        .library(name: "AppLovinSDK",                              targets: ["AppLovinSDKResources"]),
         .library(name: "AppLovinMediationGoogleAdapter",           targets: ["AppLovinMediationGoogleAdapter"]),
         .library(name: "AppLovinMediationGoogleAdManagerAdapter",  targets: ["AppLovinMediationGoogleAdManagerAdapter"]),
         .library(name: "AppLovinMediationFacebookAdapter",         targets: ["AppLovinMediationFacebookAdapter"]),

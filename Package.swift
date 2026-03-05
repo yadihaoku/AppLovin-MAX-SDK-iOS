@@ -23,6 +23,7 @@ let package = Package(
         .package(url: "https://github.com/facebook/FBAudienceNetwork.git",                        from: "6.21.1"),
         .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager.git",           from: "7.7.1"),
         .package(url: "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package.git",   from: "7.0.0"),
+        
     ],
     targets: [
 
@@ -158,6 +159,11 @@ let package = Package(
                 "https://dl.google.com/googleadmobadssdk/mediation/ios/mintegral/MintegralAdapter-8.0.7.0.zip",
             checksum: "d232222c8b9cc382cd934a02cf66e8ed81c135ae29ecfa45e87397f063f7e318"
         ),
+        .binaryTarget(
+           name: "VungleAdsSDK",
+           url: "https://vungle2-cdn-prod.s3.amazonaws.com/sdks/ios/SwiftPackageManager/VungleAds-7.7.1.zip",
+           checksum: "dca1a9084f4175ab2485046eb140c831b38cb6a35e36212b72691d119effbf75"
+        )
 
     ]
 )
